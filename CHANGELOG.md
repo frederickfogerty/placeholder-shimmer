@@ -4,9 +4,11 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
-## 0.1.0 - 2016-03-06
-- **added:** initial commit  RU translation from @aishek.
-- pt-BR translation from @tallesl.
-- es-ES translation from @ZeliosAriex.
+## 0.1.1 - 2016-03-06
+- **added:** README
 
-[Unreleased]: https://github.com/olivierlacan/keep-a-changelog/compare/v0.1.0...HEAD
+## 0.1.0 - 2016-03-06
+- **added:** initial commit
+
+[Unreleased]: https://github.com/frederickfogerty/placeholder-shimmer/compare/v0.1.1...HEAD
+[0.1.1]: https://github.com/frederickfogerty/placeholder-shimmer/compare/v0.1.0...v0.1.1
