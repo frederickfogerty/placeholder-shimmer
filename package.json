@@ -1,0 +1,24 @@
+{
+  "name": "placeholder-shimmer",
+  "version": "0.1.0",
+  "description": "A shimmer component when loading data from a server",
+  "main": "lib/index.js",
+  "scripts": {
+    "build:lib": "babel index.jsx --out lib/index.js",
+    "prepublish": "npm run build:lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frederickfogerty/react-placeholder-shimmer.git"
+  },
+  "author": "Frederick Fogerty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frederickfogerty/react-placeholder-shimmer/issues"
+  },
+  "homepage": "https://github.com/frederickfogerty/react-placeholder-shimmer#readme",
+  "dependencies": {
+    "radium": "^0.16.6"
+  }
+}
