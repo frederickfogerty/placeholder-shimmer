@@ -1,6 +1,6 @@
 import Radium from 'radium'
 import React from 'react'
-import { range, map } from 'lodash-fp'
+import { range, map, get  } from 'lodash-fp'
 
 const loaderAnimation = Radium.keyframes({
   '0%': { backgroundPosition: '-700px 0' },
@@ -14,7 +14,7 @@ const styles = {
     width: '100%',
     height: 600,
     content: '',
-    background: '#f4f3f3',
+    backgroundColor: '#f4f3f3',
     backgroundImage: 'linear-gradient( \
       to right, \
       #f4f3f3 0%, \
@@ -56,9 +56,13 @@ const renderLine = index => <div
 
 const renderBlock = block => <div style={[styles.block, block]} />
 
-const InitialLoader = () =>
-  <div style={styles.container} >
-    {map(renderBlock, blocks)}
-  </div>
+const InitialLoader = (props) => {
+  const _styles = get('style', props) || {}
+  return (
+    <div style={[styles.container, _styles]} >
+      {map(renderBlock, blocks)}
+    </div>
+  )
+}
 
 export default Radium(InitialLoader)
