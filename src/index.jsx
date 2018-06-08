@@ -1,4 +1,4 @@
-import                            Radium from "radium";
+import Radium from "radium";
 import React from "react";
 import { range, map } from "lodash-fp";
 
